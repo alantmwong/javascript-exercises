@@ -1,5 +1,11 @@
 const reverseString = function(string) {
-    for (let i = 0; i < string.length; )
+    let array = [];
+    for (let i = 0; i < string.length; i++) {
+        array[i] = string[i];
+    }
+    array.reverse();
+    string = array.join("");
+    return string
 };
 
 // Do not edit below this line
